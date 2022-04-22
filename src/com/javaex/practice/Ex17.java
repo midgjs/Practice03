@@ -12,7 +12,11 @@ public class Ex17 {
 		int num = sc.nextInt();
 		System.out.println("5의 배수의 개수: " + num/5);
 		
-		
+		int sum = 0;
+		for(int i=1; i<=num/5; i++ ) {
+			sum = sum + 5*i;
+		}
+		System.out.println("5의 배수의 합: " + sum);
 		
 		
 		
