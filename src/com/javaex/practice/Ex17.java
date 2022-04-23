@@ -7,18 +7,15 @@ public class Ex17 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		
 		System.out.print("숫자를 입력하세요: ");
 		int num = sc.nextInt();
-		System.out.println("5의 배수의 개수: " + num/5);
 		
-		int sum = 0;
-		for(int i=1; i<=num/5; i++ ) {
-			sum = sum + 5*i;
+		for(int i=0; i<num; i++) {
+			for(int j=num-i; j>=1; j=j-1) {
+				System.out.print("*");
+			}
+			System.out.println("");
 		}
-		System.out.println("5의 배수의 합: " + sum);
-		
-		
 		
 		
 		
