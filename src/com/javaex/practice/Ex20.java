@@ -23,7 +23,7 @@ public class Ex20 {
 				System.out.println("맞았습니다.");
 				System.out.print("게임을 종료하시겠습니까?(y/n) >>");
 				
-				sc.nextLine(); //개행 문자 사용 --> 이게 뭔지 모르겠음.(이거안넣으면 오류)
+				sc.nextLine(); // sc.int 다음 sc.line 쓰면 오류가 난다. --> 개행 문자 사용해서 오류 없애준다.
 				String quitgame = sc.nextLine();
 				
 				if(quitgame.equals("y")) {
